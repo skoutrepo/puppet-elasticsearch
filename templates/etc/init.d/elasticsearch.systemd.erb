@@ -12,7 +12,7 @@ ExecStart=/usr/share/elasticsearch/bin/elasticsearch -d -p /var/run/elasticsearc
 # See MAX_OPEN_FILES in sysconfig
 LimitNOFILE=65535
 # See MAX_LOCKED_MEMORY in sysconfig, use "infinity" when MAX_LOCKED_MEMORY=unlimited and using bootstrap.mlockall: true
-#LimitMEMLOCK=infinity
+LimitMEMLOCK=infinity
 # Shutdown delay in seconds, before process is tried to be killed with KILL (if configured)
 TimeoutStopSec=20
 
